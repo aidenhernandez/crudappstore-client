@@ -1,5 +1,5 @@
 const productsSection = document.querySelector('main section');
-const API_URL = 'http://localhost:3000/api/v1/products';
+
 
 getProducts()
 	.then(showProducts);
@@ -11,17 +11,8 @@ function getProducts() {
 
 function showProducts(products) {
 	products.forEach(product => {
-		const productDiv = document.createElement('div');
-		productsSection.appendChild(productDiv);
-		productDiv.outerHTML = `
-			<div class="card col-sm-4">
-			<img src="${product.image}" class="card-img-top" alt="${product.title}">
-			<div class="card-body">
-				<h5 class="card-title">${product.title}</h5>
-				<p class="card-text">${product.description}</p>
-				<a href="/product.html?id=${product.id}" class="btn btn-primary">View Product</a>
-			</div>
-			</div>
-		`;
-	})
+		const buttons = `<a href="/client/product.html?id=${product.id}" class="btn btn-primary">View Product</a>`;
+		addProductToPage(product, 4, buttons, productsSection);
+	});
 }
+
