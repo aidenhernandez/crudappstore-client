@@ -11,7 +11,7 @@ function getProducts() {
 
 function showProducts(products) {
 	products.forEach(product => {
-		const buttons = `<a href="/client/product.html?id=${product.id}" class="btn btn-primary">View Product</a>`;
+		const buttons = `<a href="product.html?id=${product.id}" class="btn btn-primary">View Product</a>`;
 		addProductToPage(product, 4, buttons, productsSection);
 	});
 }
