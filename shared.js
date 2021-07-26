@@ -15,10 +15,12 @@ function addProductToPage(product, size, buttons, parent) {
 	parent.appendChild(productDiv);
 	productDiv.outerHTML = `
 	<div class="card col-sm-${size}">
-		<img src="${product.image}" class="card-img-top" alt="${product.title}">
+		<div class="embed-responsive embed-responsive-16by9">
+			<img src="${product.image}" class="card-img-top embed-responsive-item" alt="${product.title}">
+		</div>
 		<div class="card-body">
-			<h5 class="card-title">${product.title}</h5>
-			<p class="card-text">${product.description}</p>
+			<h5 class="card-title text-truncate">${product.title}</h5>
+			<p class="card-text text-truncate">${product.description}</p>
 			<p class="card-text">$ ${product.price}</p>
 			<p class="card-text">${product.quantity} left in stock</p>
 			${buttons}
