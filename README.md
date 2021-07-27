@@ -2,7 +2,7 @@
 
 Building a full stack application that allows users to view products, add products, update products and delete products.
 
-Working Link: https://aidens-store.vercel.app/
+<a href="https://aidens-store.vercel.app/" target="_blank">Go to live app store</a>
 
 Using:
 
