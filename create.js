@@ -13,7 +13,7 @@ function formSubmitted(event) {
 	if(product) {
 		createProduct(product)
 			.then(result => {
-				window.location = '/product/html?id=' + result.id;
+				window.location = '/product.html?id=' + result.id;
 			});
 	}
 }
