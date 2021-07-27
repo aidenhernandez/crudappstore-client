@@ -2,7 +2,7 @@
 
 Building a full stack application that allows users to view products, add products, update products and delete products.
 
-[Go to live app store](https://aidens-store.vercel.app/){:target="\_blank"}
+<a href="https://aidens-store.vercel.app/">Go to live app store</a>
 
 Using:
 
